@@ -1,0 +1,22 @@
+{ "name": "bnf2pegjs"
+, "description": "Various improvements to base JS"
+,"version": "0.0.1"
+,"main": "index.js"
+,"repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/peterprib/bnf2pegjs.git"
+  }
+ ,"keywords": [
+    "javascript"
+  ]
+,"author": "Peter Prib"
+,"bugs": "https://github.com/peterprib/bnf2pegjs/issues"
+, "license": "GPL-3.0"
+, "bin": {
+    "bnf2pegjs": "./index.js"
+  }
+ ,"dependencies": 
+ {"pegjs": "^0.8.0"
+ ,"pribJSExtensions":"https://github.com/peterprib/bnf2pegjs.git"
+ }
+}
