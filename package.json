@@ -16,7 +16,8 @@
     "bnf2pegjs": "./index.js"
   }
  ,"dependencies": 
- {"pegjs": "^0.8.0"
- ,"pribJSExtensions":"https://github.com/peterprib/bnf2pegjs.git"
+ {"pegjs": "*"
+ ,"nearley": "*"
+ ,"eval": "*"
  }
 }
