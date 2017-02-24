@@ -1,7 +1,3 @@
-/* 
- * EBNF -  http://www.w3.org/TR/2004/REC-xml11-20040204/#sec-notation
- */
-
 {
   var OPS_TO_SUFFIXED_TYPES = {
     "?": "optional",
@@ -22,6 +18,8 @@
   function buildList(first, rest, index) {
     return [first].concat(extractList(rest, index));
   }
+
+  function location() {return null;}
 }
 
 Grammar = rules:(Rule __)+ {
