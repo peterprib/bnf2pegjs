@@ -1,23 +1,26 @@
-{ "name": "bnf2pegjs"
-, "description": "Various improvements to base JS"
+{ "name": "parserService"
+, "description": "Parser API service"
 ,"version": "0.0.1"
 ,"main": "index.js"
 ,"repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/peterprib/bnf2pegjs.git"
-  }
- ,"keywords": [
-    "javascript"
-  ]
+	{"type" : "git"
+	,"url" : "https://github.com/peterprib/parserService.git"
+	 }
+ ,"keywords":  ["javascript","parser"]
 ,"author": "Peter Prib"
-,"bugs": "https://github.com/peterprib/bnf2pegjs/issues"
-, "license": "GPL-3.0"
-, "bin": {
-    "bnf2pegjs": "./index.js"
-  }
+,"bugs": "https://github.com/peterprib/parserService/issues"
+,"license": "GPL-3.0"
+,"bin": 
+	{"test": "./index.js"
+	,"parser": "./lib/parser.js"
+	,"csvParser": "./lib/csvParser.js"
+	}
  ,"dependencies": 
- {"pegjs": "*"
- ,"nearley": "*"
- ,"eval": "*"
- }
+ 	{"pegjs": "*"
+ 	,"nearley": "*"
+ 	,"eval": "*"
+ 	,"express": "*"
+ 	,"requirejs": "*"
+ 	,"amdefine":"*"
+ 	}
 }

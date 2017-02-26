@@ -121,7 +121,6 @@ console.log("finished nearley MOO");
 var parserOracle = new NewParser(oracle,undefined,true);
 //var parsed=parserOracle.parse(simpleSQL);
 
-
 parserOracle.parseFile("./test/sql/simpleSelect.sql")
 //	.onCompleteCall()
 	;
