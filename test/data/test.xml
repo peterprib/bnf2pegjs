@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  comments  -->
+<elementA Aa="value@Aa" Ab="value@Aa">
+	<elementB>ValueB1</elementB>
+	<elementB>ValueB2</elementB>
+	<elementC Ca="value@Ca" Cb="value@Cb"/>
+</elementA>

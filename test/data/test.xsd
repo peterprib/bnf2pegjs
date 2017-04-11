@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.abc.com./referenceData/v01" xmlns:xs="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://www.abc.au/referenceData/v01" >
+	<xs:element name="CodeSets">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Codes" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="system">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="sysCodeVal"/>
+				<xs:element ref="sysCodeValDesc" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="sysName" type="xs:string" use="optional"/>
+			<xs:attribute name="sysKey" type="xs:string" use="optional"/>
+			<xs:attribute name="baseKey" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sysCodeVal" type="xs:string"/>
+	<xs:element name="sysCodeValDesc" type="xs:string"/>
+	<xs:element name="Description" type="xs:string"/>
+	<xs:element name="CanonicalCode" type="xs:string"/>
+	<xs:element name="Codes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Code" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="versionNumber" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Code">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="CanonicalCode" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="Description" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="system" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
